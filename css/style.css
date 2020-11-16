@@ -20,7 +20,12 @@ body {
     line-height: 24px;
     margin-top: 20px;
     padding-bottom: 24px;
-    border-bottom: rgba(0,0,0,0.2) 1px solid;
+    border-bottom: rgba(0,0,0,0.1) 1px solid;
+}
+
+.top_bar a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
 }
 
 .top_bar ul {
@@ -33,10 +38,18 @@ body {
     margin: 10px 20px;
 }
 
+.top_bar ul li a:hover {
+    color: black;
+}
+
 .contact_btn {
     display: flex;
     margin-left: auto;
     padding: 10px;
+}
+
+.contact_btn:hover {
+    color: black;
 }
 
 .contact_btn img {
@@ -49,9 +62,12 @@ body {
     background-color: #407f6a;
     border-radius: 20px;
     display: flex;
-    color: white;
     margin-left: 20px;
     padding: 10px;
+}
+
+.Login p {
+    color: white;
 }
 
 .Login img {
