@@ -18,8 +18,8 @@ body {
     display: flex;
     flex-direction: row;
     line-height: 24px;
-    margin-top: 20px;
-    padding-bottom: 24px;
+    margin-top: 10px;
+    padding-bottom: 10px;
     border-bottom: rgba(0,0,0,0.1) 1px solid;
     font-weight: 500;
 }
@@ -80,6 +80,75 @@ body {
     width: 24px;
     height: 24px;
     align-self: center;
+}
+
+/* navbar */
+
+.logo {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: rgba(0,0,0,0.1) solid 1px;
+}
+
+.navbar ul {
+    align-self: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.searchbar {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+    height: 35px;
+}
+
+.searchbar input {
+    border: gray solid 1px;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    color: gray;
+    width: 10vw;
+}
+
+.searchbar input:focus {
+    color: black;
+}
+
+.searchButton {
+    border: gray solid 1px;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    cursor: pointer;
+    width: 40px;
+    background: url("https://img.icons8.com/ios/30/000000/search--v1.png") no-repeat;
+}
+
+/* main picture */
+
+.fill_image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
 }
 
 /* design for the boxes/templates */
