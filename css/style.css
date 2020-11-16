@@ -21,6 +21,7 @@ body {
     margin-top: 20px;
     padding-bottom: 24px;
     border-bottom: rgba(0,0,0,0.1) 1px solid;
+    font-weight: 500;
 }
 
 .top_bar a {
@@ -75,6 +76,8 @@ body {
     height: 24px;
     align-self: center;
 }
+
+/* design for the boxes/templates */
 
 .small_box {
     position: relative;
