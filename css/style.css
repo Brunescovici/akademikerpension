@@ -153,6 +153,12 @@ body {
 
 .LC_Title {
     font-size: 3em;
+    color: white;
+    margin-top: 1.5em;
+}
+
+.LC_content_container {
+    margin-left: 3em;
 }
 
 .image_container {
@@ -161,6 +167,9 @@ body {
 
 .LC_paragraph {
     color: white;
+    width: 18em;
+    font-weight: 300;
+    margin-top: 1em;
 }
 
 /* design for the boxes/templates */
@@ -193,9 +202,10 @@ body {
 
 .box_title {
     margin: 10px 0;
-    color: rgba(255, 255, 255, 1);
+    color: white;
 }
 
 .read_more_p {
     color: rgba(255, 255, 255, 0.8);
+    margin-top: 1em;
 }
