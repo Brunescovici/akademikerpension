@@ -1,0 +1,35 @@
+footer {
+    background-color: #416280;
+display: flex;
+    justify-content: space-around
+}
+
+footer h2 {
+    color: white;
+}
+
+ul {
+padding: 0px;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+flex-direction: column;
+}
+
+
+.shortcuts {
+    display: flex;
+flex-direction: column;
+}
+
