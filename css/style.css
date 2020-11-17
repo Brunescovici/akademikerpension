@@ -151,6 +151,18 @@ body {
     object-fit: cover;
 }
 
+.LC_Title {
+    font-size: 3em;
+}
+
+.image_container {
+    position: relative;
+}
+
+.LC_paragraph {
+    color: white;
+}
+
 /* design for the boxes/templates */
 
 .small_box {
