@@ -1,17 +1,19 @@
 footer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     background-color: #416280;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .footerlogo {
-    width: 12%;
-    margin-left: 172px;
+    grid-column: 2/3;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
-.footertext {
-    display: flex;
-    justify-content: space-around
+.footerlogo img {
+    width: 14em;
 }
 
 footer h2 {
@@ -37,23 +39,40 @@ footer li {
     font-weight: 400;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
 .contact {
+    grid-column: 2/3;
     display: flex;
     flex-direction: column;
 }
 
 .socials {
+    grid-column: 4/5;
     display: flex;
     flex-direction: column;
 }
 
+.icons {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.icon {
+    width: 1.3em;
+    margin-right: 14px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
 
 .shortcuts {
+grid-column: 6/7;
     display: flex;
     flex-direction: column;
 }
