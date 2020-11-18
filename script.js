@@ -30,3 +30,27 @@ function sendMessageUser() {
     clone.querySelector(".chat-p").textContent = document.querySelector("#user-input").value;
     document.querySelector(".chat-content").appendChild(clone);
 }
+
+
+//fetching
+
+fetch("http://www.pacdesign.dk/CMS/wp-json/wp/v2/box")
+    .then(res => res.json())
+    .then(data => showData(data));
+
+function showData(data) {
+    console.log(data);
+    data.forEach(addBox);
+}
+
+function addBox(data) {
+    const Template = document.querySelector("#box").content;
+    const cloneBox = Template.cloneNode(true);
+
+    cloneBox.querySelector(".category").textContent = data.box_type;
+    cloneBox.querySelector(".box_title").textContent = data.headline;
+    cloneBox.querySelector(".box_img").src = data.image.guid;
+
+    const parentCont = document.querySelector("#boxes");
+    parentCont.appendChild(cloneBox);
+}
