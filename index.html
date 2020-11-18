@@ -68,6 +68,28 @@
         </article>
     </template>
 
+    <div id="chat-wrapper">
+        <div id="chat-icon"></div>
+        <div id="chat-box" class="hidden">
+            <div class="chat-header">
+                <p>Live-chat</p>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-content">
+                <template id="chat-template">
+                    <div class="chat-line">
+                        <p class="chat-p"></p>
+                    </div>
+                </template>
+            </div>
+            <div class="chat-input">
+                <input type="text" name="input" id="user-input" />
+                <div class="send-btn"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
   <script src="script.js"></script>
 </html>
