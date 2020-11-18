@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+
 * {
     margin: 0;
     font-family: Montserrat;
@@ -322,4 +323,84 @@ body {
 
 .hidden {
     display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #416280;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footerlogo {
+    grid-column: 2/3;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.footerlogo img {
+    width: 14em;
+}
+
+footer h2 {
+    color: white;
+    font-family: Aleo, sans-serif;
+    font-size: 15px;
+    margin-bottom: 0pc;
+
+}
+
+footer ul {
+    padding: 0px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+footer li {
+    list-style: none;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.icon {
+    width: 1.3em;
+    margin-right: 14px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.shortcuts {
+grid-column: 6/7;
+    display: flex;
+    flex-direction: column;
+
 }
