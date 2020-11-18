@@ -172,7 +172,6 @@ body {
 }
 
 /* design for the boxes/templates */
-
 .small_box {
     position: relative;
     width: 300px;
@@ -217,6 +216,78 @@ body {
 }
 
 #boxes {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2em;
+    justify-items: center;
+}
+
+/* breadcrumbs*/
+.breadcrumbs {
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+.active-crumb {
+    font-weight: 600;
+}
+
+.breadcrumbs p {
+    margin-right: 4px;
+}
+
+/* life change categories */
+.categ-box {
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.categ-box h2 {
+    font-family: 'Aleo', serif;
+    padding: 20px;
+    font-size: 3em;
+}
+
+.read-more {
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.job {
+    background-image: url(/assets/cat-job.jpg);
+    background-size: 170%;
+}
+
+.school {
+    background-image: url(/assets/cat-school.jpg);
+    background-size: 160%;
+    background-position: center;
+}
+
+.health {
+    background-image: url(/assets/cat-health.jpg);
+    background-size: 140%;
+}
+
+.family {
+    background-image: url(/assets/cat-family.jpg);
+    background-size: 130%;
+    background-position: center;
+}
+
+.economy {
+    background-image: url(/assets/cat-economy.jpg);
+    background-size: 140%;
+}
+
+.new-member {
+    background-image: url(/assets/cat-new_member.jpg);
+    background-size: 100%;
+}
+
+.category-grid {
     margin: 2em 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -419,5 +490,4 @@ footer a {
     grid-column: 6/7;
     display: flex;
     flex-direction: column;
-
 }
