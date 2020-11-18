@@ -165,9 +165,9 @@ body {
 
 .LC_paragraph {
     color: white;
-    width: 18em;
     font-weight: 300;
     margin-top: 1em;
+    padding-right: 5em;
 }
 
 /* design for the boxes/templates */
@@ -207,6 +207,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
     margin-top: 1em;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .read_more_p:hover {
