@@ -11,7 +11,6 @@ function hideChat() {
     document.querySelector("#chat-box").classList.add("hidden");
 }
 
-
 let chatTemplate = document.querySelector("#chat-template")
 
 sendMessageBot("Hi, my name is Lina. How may I help you today?")
@@ -22,11 +21,12 @@ function sendMessageBot(message) {
     document.querySelector(".chat-content").appendChild(clone);
 }
 
-
 document.querySelector(".send-btn").addEventListener("click", sendMessageUser);
 function sendMessageUser() {
     let clone = chatTemplate.content.cloneNode(true);
     clone.querySelector(".chat-line").classList.add("user")
     clone.querySelector(".chat-p").textContent = document.querySelector("#user-input").value;
     document.querySelector(".chat-content").appendChild(clone);
+    //clear input
+    document.querySelector("#user-input").value = "";
 }
