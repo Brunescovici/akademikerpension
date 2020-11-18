@@ -1,20 +1,45 @@
 footer {
     background-color: #416280;
-display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footerlogo {
+    width: 12%;
+    margin-left: 172px;
+}
+
+.footertext {
+    display: flex;
     justify-content: space-around
 }
 
 footer h2 {
     color: white;
+    font-family: Aleo, sans-serif;
+    font-size: 15px;
+    margin-bottom: 0pc;
+
 }
 
-ul {
-padding: 0px;
+footer ul {
+    padding: 0px;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
-li {
+footer li {
     list-style: none;
     color: white;
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .contact {
@@ -24,12 +49,11 @@ li {
 
 .socials {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 
 
 .shortcuts {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
-
