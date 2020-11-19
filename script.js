@@ -1,11 +1,13 @@
 //functions for the 'live-chat'
 document.querySelector("#chat-icon").addEventListener("click", showChat);
+
 function showChat() {
     this.classList.add("hidden");
     document.querySelector("#chat-box").classList.remove("hidden");
 }
 
 document.querySelector(".close").addEventListener("click", hideChat);
+
 function hideChat() {
     document.querySelector("#chat-icon").classList.remove("hidden");
     document.querySelector("#chat-box").classList.add("hidden");
@@ -22,6 +24,7 @@ function sendMessageBot(message) {
 }
 
 document.querySelector(".send-btn").addEventListener("click", sendMessageUser);
+
 function sendMessageUser() {
     let clone = chatTemplate.content.cloneNode(true);
     clone.querySelector(".chat-line").classList.add("user")
@@ -32,9 +35,10 @@ function sendMessageUser() {
 }
 
 
-//fetching
 
-fetch("http://www.pacdesign.dk/CMS/wp-json/wp/v2/box")
+//fetch the data for the front page
+
+fetch("//www.pacdesign.dk/CMS/wp-json/wp/v2/box")
     .then(res => res.json())
     .then(data => showData(data));
 
@@ -54,3 +58,6 @@ function addBox(data) {
     const parentCont = document.querySelector("#boxes");
     parentCont.appendChild(cloneBox);
 }
+//
+
+

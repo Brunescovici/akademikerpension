@@ -172,7 +172,6 @@ body {
 }
 
 /* design for the boxes/templates */
-
 .small_box {
     position: relative;
     width: 300px;
@@ -224,6 +223,158 @@ body {
     justify-items: center;
 }
 
+/* breadcrumbs*/
+.breadcrumbs {
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+.active-crumb {
+    font-weight: 600;
+}
+
+.breadcrumbs p {
+    margin-right: 4px;
+}
+
+/* life change categories */
+.categ-box {
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.categ-box h2 {
+    padding: 20px;
+    font-family: 'Aleo', serif;
+    font-size: 3em;
+    color: white;
+}
+
+.read-more {
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.read-more a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.job {
+    background-image: url(../assets/cat-job.jpg);
+    background-size: 170%;
+}
+
+.school {
+    background-image: url(../assets/cat-school.jpg);
+    background-size: 160%;
+    background-position: center;
+}
+
+.health {
+    background-image: url(../assets/cat-health.jpg);
+    background-size: 140%;
+}
+
+.family {
+    background-image: url(../assets/cat-family.jpg);
+    background-size: 130%;
+    background-position: center;
+}
+
+.economy {
+    background-image: url(../assets/cat-economy.jpg);
+    background-size: 140%;
+}
+
+.new-member {
+    background-image: url(../assets/cat-new_member.jpg);
+    background-size: 100%;
+}
+
+.category-grid {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2em;
+    justify-items: center;
+}
+
+
+/* templates for the situation page*/
+#category-heading {
+    font-size: 4em;
+    font-family: 'Aleo', serif;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    color: white;
+}
+
+#short-excerpt {
+    position: absolute;
+    left: 80px;
+    top: 140px;
+    color: white;
+}
+
+#hero-img-cat {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#top-section {
+    position: relative;
+}
+
+#inform-us {
+    font-family: 'Aleo';
+    font-size: 4em;
+    padding: 10px;
+}
+
+.accordion {
+    color: white;
+}
+
+h4 {
+    font-family: 'Aleo', serif;
+    font-size: 1.3rem;
+}
+
+.accordion-heading {
+    display: flex;
+    justify-content: space-between;
+    background-color: #407F6A;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-descr {
+    width: 100%;
+    height: 0;
+    background-color: #9FBEB4;
+    overflow: hidden;
+/*    word-wrap: break-word;*/
+}
+
+.accordion-arrow {
+    color: white;
+}
+
+.open {
+    height: auto;
+}
+
+.accordion pre {
+    padding: 10px;
+    white-space: pre-wrap;
+/*    word-wrap: break-word;*/
+}
 
 /* chat */
 #chat-wrapper {
@@ -237,7 +388,7 @@ body {
 #chat-icon {
     width: 70px;
     height: 65px;
-    background-image: url(/assets/icons8-chat-52.png);
+    background-image: url(../assets/icons8-chat-52.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF9000;
@@ -343,6 +494,7 @@ body {
 /*footer*/
 
 footer {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     background-color: #416280;
@@ -363,9 +515,8 @@ footer {
 footer h2 {
     color: white;
     font-family: Aleo, sans-serif;
-    font-size: 15px;
+    font-size: 1.3em;
     margin-bottom: 0pc;
-
 }
 
 footer ul {
@@ -378,7 +529,7 @@ footer li {
     list-style: none;
     color: white;
     margin-bottom: 5px;
-    font-size: 11px;
+    font-size: .9em;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
 }
@@ -419,5 +570,4 @@ footer a {
     grid-column: 6/7;
     display: flex;
     flex-direction: column;
-
 }
