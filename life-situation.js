@@ -58,7 +58,7 @@ console.log(id);
 
 //fetch the data from wp
 function fetchData() {
-    fetch("http://www.pacdesign.dk/CMS/wp-json/wp/v2/life_change")
+    fetch("//www.pacdesign.dk/CMS/wp-json/wp/v2/life_change")
         .then((resp) => resp.json())
         .then(function (data) {
             //to access the data outside

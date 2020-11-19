@@ -38,7 +38,7 @@ function sendMessageUser() {
 
 //fetch the data for the front page
 
-fetch("http://www.pacdesign.dk/CMS/wp-json/wp/v2/box")
+fetch("//www.pacdesign.dk/CMS/wp-json/wp/v2/box")
     .then(res => res.json())
     .then(data => showData(data));
 
